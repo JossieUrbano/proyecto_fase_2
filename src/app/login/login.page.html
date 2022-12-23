@@ -1,0 +1,29 @@
+<ion-header >
+  <ion-toolbar >
+    <ion-title class="ion-padding" color="primary">Iniciar Sesión </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" color="primary">
+  
+  <form [formGroup]="loginForm"  class="contenedor_inputs">
+    <ion-input formControlName="correo"   placeholder="Correo" class="primary-input"></ion-input>
+    <ion-input formControlName="contrasenia" placeholder="Contraseña" type="password" class="primary-input"></ion-input>
+    
+    <div class="ion-margin-top ion-text-right forget" color="secondary">
+      <a>¿ Has olvidado tu contraseña ?</a>
+    </div>
+  </form>
+
+  <div class="ion-margin-top">
+    <ion-button (click)="logeo()" expand="block" color="secondary" click="login()" > INICIAR
+    </ion-button>
+  </div>
+
+  <div class="ion-margin-top ion-text-center">
+    <ion-button expand="block" class="ion-margin-top" (click)="dismiss()" fill="outline"  color="secondary">Cancelar</ion-button>
+  </div>
+
+  
+
+</ion-content>

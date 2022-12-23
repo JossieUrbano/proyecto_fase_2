@@ -1,0 +1,37 @@
+<ion-header >
+  <ion-toolbar >
+    <ion-title class="ion-padding" color="primary">Registrarse </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <div  class="title ion-text-center">
+    <p> Por Favor Digitar Todos Los Da Para El Registro </p>
+    <br>
+    <br>
+  </div>
+
+  <form [formGroup]="regitroForm">  
+    <ion-input formControlName="nombres" placeholder="Nombres" class="primary-input"></ion-input>
+    <ion-input formControlName="apellidos" placeholder="Apellidos" class="primary-input"></ion-input>
+    <ion-input formControlName="telefono" placeholder="Celular" class="primary-input"></ion-input>
+    <ion-input formControlName="correo"  placeholder="Email" class="primary-input"></ion-input>
+    <ion-input formControlName="usuario"  placeholder="Usuario" class="primary-input"></ion-input>
+    <ion-input formControlName="contrasenia"  placeholder="Contraseña" type="password" class="primary-input"></ion-input>
+    <ion-input formControlName="confirmarContrasenia"  placeholder="Confirmar Contraseña" type="password" class="primary-input"></ion-input>
+  </form>
+
+  
+
+  <div class="ion-margin-top">
+    <ion-button expand="block" (click)="registrar()" > Registrarse
+    </ion-button>
+  </div>
+
+  <div class="ion-margin-top ion-text-center">
+    <ion-button expand="block" class="ion-margin-top" (click)="dismiss()" fill="outline"  color="primary">Cancelar</ion-button>
+  </div>
+
+
+</ion-content>

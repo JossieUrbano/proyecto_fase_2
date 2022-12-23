@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="rgb(255, 127, 249)" >
+    <ion-title>
+     
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="logout()">
+        <ion-icon name="log-out-outline"></ion-icon>
+        salir
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large"> Servicios</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <br><br>
+
+  <ion-card>
+    <img  height="220px" src="../../assets/icon/acrilicos.jpg" *ngFor="let item of Manicure" routerLink="/productos/{{item.id}}"/>
+    <ion-card-header *ngFor="let item of Manicure" routerLink="/productos/{{item.id}}" >
+      <ion-card-title >{{ item.nombre}}</ion-card-title>
+    </ion-card-header>
+  </ion-card>
+
+
+
+
+
+</ion-content>

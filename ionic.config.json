@@ -1,0 +1,7 @@
+{
+  "name": "sirena",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

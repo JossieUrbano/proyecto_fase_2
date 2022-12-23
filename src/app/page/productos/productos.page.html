@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Manicure</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <br><br>
+
+  <ion-list [inset]="true">
+    <ion-item>
+      <ion-label>Acrilicas</ion-label>
+      <ion-note slot="end">
+        <ion-button (click)="AgendarCitaAcri()"> 
+          Agendar Cita
+        </ion-button>
+      </ion-note>
+    </ion-item>
+    <ion-item>
+      <ion-label>En Gel</ion-label>
+      <ion-note slot="end">
+        <ion-button (click)="AgendarCitaGel()"> 
+          Agendar Cita
+        </ion-button>
+      </ion-note>
+    </ion-item>
+    <ion-item>
+      <ion-label>Semi-Permanentes</ion-label>
+      <ion-note slot="end">
+        <ion-button (click)="AgendarCitaSP()"> 
+          Agendar Cita
+        </ion-button>
+      </ion-note>
+    </ion-item>
+  </ion-list>
+
+  <ion-text *ngIf="mensajeRegistro"  color="success">
+    <h2>{{mensajeRegistro}}</h2>
+  </ion-text>
+
+</ion-content>
